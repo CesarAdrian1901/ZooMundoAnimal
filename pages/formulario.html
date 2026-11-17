@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/zoo.png">
+    <title>Zoológico</title>
+</head>
+
+<body>
+
+    <header>
+        <h2 style="color: brown;">Zoológico Mundo Animal</h2>
+        <p>Registro de Animales</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a> |
+        <a href="https://wiwaquito.org/" target="_blank">Pagina oficial</a> |
+        <a href="galeria.html">Galeria</a> |
+        <a href="formulario.html">Formulario</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <h3>Ingresar Animal</h3>
+        
+        <form action="#" method="POST">
+            
+            <label>1. Nombre del animal:</label><br>
+            <input type="text" name="nombre"><br><br>
+
+            <label>2. Código del animal:</label><br>
+            <input type="text" name="codigo"><br><br>
+
+            <label>3. Tipo de animal:</label><br>
+            <select name="tipo">
+                <option value="perro">Perro / Lobo</option>
+                <option value="gato">Gato / Felino</option>
+                <option value="ave">Ave</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+
+            <label>4. Peso en kilos:</label><br>
+            <input type="number" name="peso"><br><br>
+
+            <label>5. Fecha de llegada:</label><br>
+            <input type="date" name="fecha"><br><br>
+
+            <label>6. Hora de comer:</label><br>
+            <input type="time" name="hora"><br><br>
+
+            <label>7. Sexo:</label><br>
+            <input type="radio" name="sexo" value="macho"> Macho
+            <input type="radio" name="sexo" value="hembra"> Hembra<br><br>
+
+            <label>8. ¿Está vacunado?:</label><br>
+            <input type="checkbox" name="vacuna" value="si"> Sí<br><br>
+
+            <label>9. Correo del cuidador:</label><br>
+            <input type="email" name="correo"><br><br>
+
+            <label>10. Teléfono de contacto:</label><br>
+            <input type="tel" name="telefono"><br><br>
+
+            <label>11. Color del animal:</label><br>
+            <input type="color" name="color"><br><br>
+
+            <label>12. Foto del animal:</label><br>
+            <input type="file" name="foto"><br><br>
+
+            <label>13. Ciudad de origen:</label><br>
+            <input list="ciudades" name="ciudad">
+            <datalist id="ciudades">
+                <option value="Quito">
+                <option value="Guayaquil">
+                <option value="Cuenca">
+            </datalist><br><br>
+
+            <label>14. Nivel de tamaño (1 al 10):</label><br>
+            <input type="range" name="tamano" min="1" max="10"><br><br>
+
+            <label>15. Comentarios:</label><br>
+            <textarea name="comentarios" rows="3" cols="30"></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+
+        </form>
+    </main>
+
+    <hr>
+    <footer>
+        <p>Autor: Cesar Balcazar</p>
+    </footer>
+
+</body>
+
+</html>
